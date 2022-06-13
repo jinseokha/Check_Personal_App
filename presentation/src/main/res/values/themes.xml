@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.Check_Personal_App.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Check_Personal_App.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Check_Personal_App.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

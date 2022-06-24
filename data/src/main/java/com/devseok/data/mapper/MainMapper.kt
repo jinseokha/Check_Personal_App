@@ -1,0 +1,39 @@
+package com.devseok.data.mapper
+
+import com.devseok.data.remote.model.DataLoveResponse
+import com.devseok.data.remote.model.DataScore
+import com.devseok.domain.model.DomainLoveResponse
+import com.devseok.domain.model.DomainScore
+
+/**
+ * @author Ha Jin Seok
+ * @email seok270@gmail.com
+ * @created 2022-06-16
+ * @desc
+ */
+object MainMapper {
+
+    fun loveMapper(
+        dataResponse: DataLoveResponse?
+    ): DomainLoveResponse? {
+        return if (dataResponse != null) {
+            DomainLoveResponse(
+                fname = dataResponse.fname,
+                percentage = dataResponse.percentage,
+                result = dataResponse.result,
+                sname = dataResponse.sname
+            )
+        } else dataResponse
+    }
+
+    fun scoreMapper(
+        domainResponse : DomainScore
+    ) : DataScore {
+        return DataScore(
+            man = domainResponse.man,
+            woman = domainResponse.woman,
+            percentage = domainResponse.percentage,
+            date = domainResponse.date
+        )
+    }
+}

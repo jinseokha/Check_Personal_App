@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "873558985049",
+    "project_id": "check-personal-app",
+    "storage_bucket": "check-personal-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873558985049:android:e991bfdbaa830bdc242448",
+        "android_client_info": {
+          "package_name": "com.devseok.check_personal_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873558985049-au3moql4mm8m7hngv11lqu30f97j0t2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY43GfFnHm25whW377bwIpB76nGGsNEUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873558985049-au3moql4mm8m7hngv11lqu30f97j0t2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+package com.devseok.check_personal_app.di
+
+/**
+ * @author Ha Jin Seok
+ * @email seok270@gmail.com
+ * @created 2022-06-16
+ * @desc
+ */
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
+
+@Module
+@InstallIn(SingletonComponent::class)
+object FirebaseModule {
+
+    @Provides
+    @Singleton
+    fun provideFirebaseRTDB() = FirebaseDatabase.getInstance()
+
+    @Provides
+    @Singleton
+    fun provideFirebaseStore() : FirebaseFirestore {
+        return FirebaseFirestore.getInstance()
+    }
+}

@@ -61,18 +61,16 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/back_main_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:enabled="false"
             android:background="@drawable/name_setting_btn_frame"
             android:text="메인으로"
             android:layout_margin="26dp"
-
             android:textSize="17sp"
             android:padding="10dp"
             android:textColor="@color/white"
+            android:onClick="@{fragment::backBtnClick}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
